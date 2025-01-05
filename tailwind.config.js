@@ -12,7 +12,8 @@ export default {
         background: "#F5F5F5", // Background color
       },
       fontFamily: {
-        sans: ["YourFontFamilyName", "sans-serif"], // Replace with your font
+        sans: ["YourFontFamilyName", "sans-serif"], 
+        cursive: ['Pacifico', 'cursive'],// Replace with your font
       },
     },
   },
