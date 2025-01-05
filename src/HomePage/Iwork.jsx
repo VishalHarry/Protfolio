@@ -1,32 +1,61 @@
 import React from 'react'
+import img1 from '../assets/blogs.jpg'
+import img2 from '../assets/digital.avif'
+import img3 from '../assets/hos.jpg'
+import img4 from '../assets/hr.jpg'
+import img5 from '../assets/shop.avif'
+import img6 from '../assets/student.jpg'
+import img7 from '../assets/port.png'
+
 const workData = [
   {
     title: 'HR Management System',
-    description: 'A full-stack web app to manage employee data, leave requests, and payroll.',
-    tools: 'React, Node.js, Express, MongoDB',
+    description: 'A FrontEnd web app to manage employee data, leave requests, and payroll.',
+    tools: 'React, Tailwind, Firebase, ',
+    link: 'https://github.com/VishalHarry/HRManagementSystem',
+    image: img4  // Example image URL
+  },
+  {
+    title: 'Hospital Management System',
+    description: 'A FullStack web app to manage Doctor data, Patient Data, and Mantained by Admin',
+    tools: 'JSP, Servlet, HTML,CSS,MySql,JDBC ',
     link: 'https://github.com/your-repo/hr-management-system',
-    image: 'https://via.placeholder.com/600x400'  // Example image URL
+    image: img3  // Example image URL
+  },
+  {
+    title: 'Student Management System',
+    description: 'A FullStack web app to manage Student Data, Teacher Data, and Mantained by Admin',
+    tools: 'React, Tailwind, Firebase,NodeJS,MongDB,Express ',
+    link: 'https://github.com/VishalHarry/Rankora',
+    image: img6  // Example image URL
   },
   {
     title: 'Portfolio Website',
     description: 'A personal portfolio showcasing my projects and skills.',
-    tools: 'React, HTML, CSS',
-    link: 'https://yourportfolio.com',
-    image: 'https://via.placeholder.com/600x400'  // Example image URL
+    tools: 'React, Tilwind, ',
+    link: 'https://github.com/VishalHarry/Protfolio',
+    image: img7  // Example image URL
+  },
+  {
+    title: 'Bitcoins Details',
+    description: 'A web that tells about the current status of all type of digital curency',
+    tools: 'React, Tilwind, Fatch API',
+    link: 'https://github.com/VishalHarry/FrontEndProject2',
+    image: img2  // Example image URL
   },
   {
     title: 'E-commerce Platform',
     description: 'A fully functional e-commerce platform for online shopping.',
-    tools: 'React, Node.js, MongoDB',
-    link: 'https://github.com/your-repo/e-commerce-platform',
-    image: 'https://via.placeholder.com/600x400'  // Example image URL
+    tools: 'React, Fatch API, Firebase,Tailwind',
+    link: 'https://github.com/VishalHarry/E-Commerce_FrontEnd',
+    image: img5  // Example image URL
   },
   {
     title: 'Blog Website',
     description: 'A blog website built with React and Node.js.',
-    tools: 'React, Express, MongoDB',
-    link: 'https://github.com/your-repo/blog-website',
-    image: 'https://via.placeholder.com/600x400'  // Example image URL
+    tools: 'React, Tilwind,',
+    link: 'https://github.com/VishalHarry/FinalFrontEndProject',
+    image: img1  // Example image URL
   },
   // Add more work items here
 ];
@@ -34,7 +63,7 @@ const workData = [
 
 const Iwork = () => {
   return (
-    <section id="work" className="p-8 flex-1 rounded-lg bg-white shadow-lg mt-5 h-[90%] overflow-auto">
+    <section id="work" className="p-8 flex-1 rounded-lg bg-white shadow-lg mt-5 h-[50%] overflow-auto">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">
           Works
           <span className="block mt-2 w-30 h-1 bg-orange-600"></span>
