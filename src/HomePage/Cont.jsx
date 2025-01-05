@@ -27,7 +27,7 @@ const Cont = () => {
         </div>
         <div>
           <h3 className="text-xl font-semibold text-orange-600">Phone</h3>
-          <p className="text-gray-800">+8126050903</p>
+          <p className="text-gray-800">+8126050***</p>
         </div>
       </div>
 

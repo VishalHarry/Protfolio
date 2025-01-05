@@ -63,7 +63,7 @@ const Sidebar = () => {
   <div className="text-gray-700 text-center flex flex-col gap-5 text-xl w-full">
     <div className="flex items-center justify-center gap-2 pb-2 border-b-2 border-gray-400">
       <FaPhoneAlt />
-      <span className="font-medium">+918126050903</span>
+      <span className="font-medium">+918126050***</span>
     </div>
     <div className="flex items-center justify-center gap-2 pb-2 border-b-2 border-gray-400">
       <FaEnvelope />
