@@ -8,7 +8,7 @@ const MainContent = () => {
 
       {/* About Me Section */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800">ABOUT ME</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-800">ABOUT ME  <span className="block mt-2 w-30 h-1 bg-orange-600"></span></h2>
         <p className="text-gray-700 leading-relaxed">
           Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile Java developer with a strong foundation in front-end development and a deep interest in cybersecurity and web security. My journey in the world of software development has been both exciting and rewarding, as I continually strive to enhance my skills, explore emerging technologies, and contribute to building secure and user-friendly solutions.
         </p>
