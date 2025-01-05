@@ -8,7 +8,6 @@ import Cont from './Cont';
 import Iwork from './Iwork';
 
 
-
 function Home() {
   const [currentComponent, setCurrentComponent] = useState('mainContent');
    // Function to change component based on button click
@@ -33,7 +32,7 @@ function Home() {
         {currentComponent === 'mainContent' && <MainContent className="flex-grow p-8" />}
         {currentComponent === 'resume' && <Resume />}
         {currentComponent === 'contact' && <Cont/>}
-        {currentComponent === 'work' && <Iwork/>}
+        {currentComponent === 'work' && <Iwork />}
         
         
       </div>
