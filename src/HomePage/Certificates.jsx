@@ -1,27 +1,31 @@
 import React from 'react';
+import cer1 from '../assets/cer1.jpg'
+import cer2 from '../assets/cer2.jpg'
+import cer3 from '../assets/cer3.jpg'
+
 
 
 const certificateData = [
   {
-    title: 'React Certification',
-    description: 'Completed an in-depth React course from Udemy.',
-    issuedBy: 'Udemy',
+    title: 'junior security Professional',
+    description: 'Completed an in-depth Cyber Security course from Udemy.',
+    issuedBy: 'Defronic',
     link: 'https://www.udemy.com/course/react-the-complete-guide/',
-    image: ''
+    image: cer1
   },
   {
-    title: 'JavaScript Fundamentals',
-    description: 'Learned core JavaScript concepts and best practices.',
-    issuedBy: 'Codecademy',
+    title: 'WebSite Hacking/penetration testing',
+    description: 'Learned core Web hacking concepts and best practices.',
+    issuedBy: 'Udamy',
     link: 'https://www.codecademy.com/learn/introduction-to-javascript',
-    image: ''
+    image: cer2
   },
   {
-    title: 'Full Stack Web Development',
-    description: 'Completed a full stack web development course, covering frontend and backend technologies.',
-    issuedBy: 'Coursera',
+    title: 'Ethical hacking',
+    description: 'Completed a Ethical hacking course',
+    issuedBy: 'Udamy',
     link: 'https://www.coursera.org/professional-certificates/full-stack-web-development',
-    image: ''
+    image: cer3
   },
   // Add more certificates here
 ];
@@ -36,7 +40,7 @@ const Icertificates = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
         {certificateData.map((certificate, index) => (
           <div key={index} className="bg-gray-200 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <img src="" alt={certificate.title} className="w-full h-40 object-cover rounded-md mb-4" />
+            <img src={certificate.image} alt={certificate.title} className="w-full h-40 object-cover rounded-md mb-4" />
             <h3 className="text-xl font-semibold text-orange-600 mb-2">{certificate.title}</h3>
             <p className="text-gray-700 mb-4">{certificate.description}</p>
             <p><strong>Issued By:</strong> {certificate.issuedBy}</p>

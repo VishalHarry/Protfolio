@@ -1,10 +1,17 @@
 import React from 'react';
 import img from '../assets/vvt.jpg';
+import resuma from '../assets/resuma1.pdf'
 
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Sidebar = () => {
+  const handleDownload = () => {
+    const link = document.createElement('a');  // Create a link element
+    link.href = resuma;  // Path to your resume file
+    link.download = 'resume.pdf';  // The name of the downloaded file
+    link.click();  // Programmatically click the link to trigger the download
+  };
   return (
     <div className="h-screen w-[30%] flex justify-center items-center relative  mt-10">
       <aside className="w-[95%] bg-white shadow-lg p-8 flex flex-col items-center rounded-lg relative">
@@ -63,7 +70,7 @@ const Sidebar = () => {
   <div className="text-gray-700 text-center flex flex-col gap-5 text-xl w-full">
     <div className="flex items-center justify-center gap-2 pb-2 border-b-2 border-gray-400">
       <FaPhoneAlt />
-      <span className="font-medium">+918126050***</span>
+      <span className="font-medium">+918126050903</span>
     </div>
     <div className="flex items-center justify-center gap-2 pb-2 border-b-2 border-gray-400">
       <FaEnvelope />
@@ -76,7 +83,9 @@ const Sidebar = () => {
   </div>
 
   {/* Resume Download Button */}
-  <button className="bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-6 py-2 rounded-full hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition">
+  <button 
+   onClick={handleDownload} 
+  className="bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-6 py-2 rounded-full hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition">
   Download Resume
 </button>
 
