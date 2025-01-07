@@ -6,6 +6,7 @@ import MainNav from './MainNav';
 import Resume from './Resume';
 import Cont from './Cont';
 import Iwork from './Iwork';
+import Certificates from './Certificates';
 
 
 function Home() {
@@ -33,6 +34,7 @@ function Home() {
         {currentComponent === 'resume' && <Resume />}
         {currentComponent === 'contact' && <Cont/>}
         {currentComponent === 'work' && <Iwork />}
+        {currentComponent === 'certificates' && <Certificates/>}
         
         
       </div>

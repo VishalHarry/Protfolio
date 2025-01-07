@@ -88,11 +88,12 @@ const Cont = () => {
 
         {/* Submit Button */}
         <button
-          type="submit"
-          className="w-1/3 items-center bg-orange-600 text-white py-3 rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 flex justify-center"
-        >
-          <FaPaperPlane className="mr-2" /> Send Message
-        </button>
+  type="submit"
+  className="w-1/3 items-center bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white py-3 rounded-lg shadow-lg hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition duration-300 flex justify-center"
+>
+  <FaPaperPlane className="mr-2" /> Send Message
+</button>
+
       </form>
     </div>
       </section>

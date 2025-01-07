@@ -76,9 +76,10 @@ const Sidebar = () => {
   </div>
 
   {/* Resume Download Button */}
-  <button className="bg-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition">
-    Download Resume
-  </button>
+  <button className="bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white px-6 py-2 rounded-full hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition">
+  Download Resume
+</button>
+
 </div>
       </aside>
     </div>
