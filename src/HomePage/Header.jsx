@@ -18,18 +18,21 @@ const Header = () => {
   };
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 w-full">
+    <header className="flex justify-between items-center px-4 sm:px-6 md:px-8 py-4 w-full">
       {/* Logo */}
-      <h1 className="text-2xl font-bold text-red-600">
-        Vishal <span className="text-black font-cursive">Tomar</span>
+      <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-red-600 dark:text-red-400">
+        Vishal{" "}
+        <span className="text-black dark:text-white font-cursive">
+          Tomar
+        </span>
       </h1>
 
       {/* Theme Toggle */}
       <button
         onClick={toggleTheme}
-        className="p-2 rounded-full border-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex justify-center items-center"
+        className="p-2 rounded-full border-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex justify-center items-center transition-all duration-300"
       >
-        <span className="text-xl">
+        <span className="text-lg sm:text-xl md:text-2xl">
           {isDarkMode ? "🌞" : "🌙"}
         </span>
       </button>
