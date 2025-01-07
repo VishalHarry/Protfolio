@@ -42,14 +42,14 @@ const Cont = () => {
   };
 
   return (
-    <main className="p-6 md:p-12 flex-1 bg-white shadow-lg rounded-lg">
+    <main className="p-6 md:p-12 flex-1 bg-white shadow-lg rounded-lg dark:bg-gray-800 dark:text-gray-100">
       {/* Header Section */}
       <section className="mb-10 text-center">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-2">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-2 dark:text-gray-100">
           Contact Me
         </h2>
         <span className="block mx-auto w-20 md:w-24 h-1 bg-orange-600"></span>
-        <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-4">
+        <p className="text-sm md:text-base lg:text-lg text-gray-700 mt-4 dark:text-gray-100">
           Have a question or want to work together? Feel free to reach out!
         </p>
       </section>
@@ -66,7 +66,7 @@ const Cont = () => {
               <h3 className="text-base md:text-lg lg:text-xl font-semibold text-orange-600">
                 Phone
               </h3>
-              <p className="text-sm md:text-base lg:text-lg text-gray-800">
+              <p className="text-sm md:text-base lg:text-lg text-gray-800 ">
                 +8126050903
               </p>
             </div>
@@ -87,13 +87,13 @@ const Cont = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-gray-100 p-6 md:p-8 rounded-lg shadow-lg w-full lg:w-1/2">
+        <div className="bg-gray-100 p-6 md:p-8 rounded-lg shadow-lg w-full lg:w-1/2 dark:bg-gray-600 dark:text-gray-100">
           <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-orange-600 mb-6 flex items-center">
             <FaPaperPlane className="mr-2" /> Send a Message
           </h3>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2">
+              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2 dark:text-gray-100">
                 Name
               </label>
               <input
@@ -101,12 +101,12 @@ const Cont = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base dark:bg-gray-800 dark:text-gray-100"
                 placeholder="Your Name"
               />
             </div>
             <div>
-              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2">
+              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2 dark:text-gray-100">
                 Email
               </label>
               <input
@@ -114,26 +114,26 @@ const Cont = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base dark:bg-gray-800 dark:text-gray-100"
                 placeholder="Your Email"
               />
             </div>
             <div>
-              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2">
+              <label className="block text-sm md:text-base lg:text-lg text-gray-700 font-medium mb-2 dark:text-gray-100">
                 Message
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-600 focus:outline-none text-sm md:text-base dark:bg-gray-800 dark:text-gray-100"
                 rows="5"
                 placeholder="Your Message"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white font-semibold rounded-lg shadow-lg hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition duration-300 flex items-center justify-center text-sm md:text-base"
+              className="w-full py-3 bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 text-white font-semibold rounded-lg shadow-lg hover:from-orange-600 hover:via-orange-700 hover:to-orange-800 transition duration-300 flex items-center justify-center text-sm md:text-base "
             >
               <FaPaperPlane className="mr-2" /> Send Message
             </button>

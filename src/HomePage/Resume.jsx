@@ -1,10 +1,10 @@
 import { FaGraduationCap, FaBriefcase } from "react-icons/fa";
 const Resume = () => {
   return (
-    <main className="p-8 flex-1 rounded-lg bg-white shadow-lg mt-5">
+    <main className="p-8 flex-1 rounded-lg bg-white shadow-lg mt-5 dark:bg-gray-800 dark:text-gray-100">
       {/* Header */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-gray-800">
+        <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-100">
           Resume
           <span className="block mt-2 w-30 h-1 bg-orange-600"></span>
         </h2>
@@ -52,7 +52,7 @@ const Resume = () => {
           <h3 className="text-2xl font-semibold mb-4 text-orange-600">Work Skills</h3>
           <div className="flex flex-wrap gap-3">
             {['Servlate&Jsp', 'React.js', 'HTML 5', 'CSS 3', 'Tailwind CSS', 'Figma', 'JavaScript', 'JDBC', 'MYSQL','JUnit','DevOps', 'Hibernet', 'Spring', 'SpringBoot', 'Git','CyberSecurity','Window Testing','Web Pentesting','Security Analyst'].map((skill) => (
-              <span key={skill} className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow">
+              <span key={skill} className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow dark:bg-gray-600 dark:text-gray-100">
                 {skill}
               </span>
             ))}
@@ -62,7 +62,7 @@ const Resume = () => {
           <h3 className="text-2xl font-semibold mb-4 text-orange-600">Soft Skills</h3>
           <div className="flex flex-wrap gap-3">
             {['Time Management', 'Mentorship', 'Impeccable Communication', 'Flexibility', 'Research', 'Writing'].map((skill) => (
-              <span key={skill} className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow">
+              <span key={skill} className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg shadow dark:bg-gray-600 dark:text-gray-100">
                 {skill}
               </span>
             ))}

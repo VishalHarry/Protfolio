@@ -16,7 +16,7 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-600 dark:text-gray-100 p-8">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-600  p-8">
       <Header />
 
       <div className="flex flex-col lg:flex-row mt-4 gap-5">
