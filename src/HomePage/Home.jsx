@@ -8,40 +8,31 @@ import Cont from './Cont';
 import Iwork from './Iwork';
 import Certificates from './Certificates';
 
-
 function Home() {
   const [currentComponent, setCurrentComponent] = useState('mainContent');
-   // Function to change component based on button click
-   const handleNavClick = (component) => {
+
+  const handleNavClick = (component) => {
     setCurrentComponent(component);
   };
+
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
-      {/* Header */}
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-600 dark:text-gray-100 p-8">
       <Header />
 
-      {/* Main Layout with Sidebar and Main Content */}
-      <div className="flex mt-4 gap-5">
+      <div className="flex flex-col lg:flex-row mt-4 gap-5">
         {/* Sidebar */}
         <Sidebar />
-        
-        
-            {/* Main Content */}
-          
-      <div className='w-[70%]'>
-        <MainNav onNavClick={handleNavClick}/>
-        {currentComponent === 'mainContent' && <MainContent className="flex-grow p-8" />}
-        {currentComponent === 'resume' && <Resume />}
-        {currentComponent === 'contact' && <Cont/>}
-        {currentComponent === 'work' && <Iwork />}
-        {currentComponent === 'certificates' && <Certificates/>}
-        
-        
+
+        {/* Main Content */}
+        <div className="w-full lg:w-[70%]">
+          <MainNav onNavClick={handleNavClick} />
+          {currentComponent === 'mainContent' && <MainContent className="flex-grow p-8" />}
+          {currentComponent === 'resume' && <Resume />}
+          {currentComponent === 'contact' && <Cont />}
+          {currentComponent === 'work' && <Iwork />}
+          {currentComponent === 'certificates' && <Certificates />}
+        </div>
       </div>
-       
-      
-      </div>
-    
     </div>
   );
 }
